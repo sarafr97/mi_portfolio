@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara Fraile</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Contenedor principal, cabecera de arriba-->
+    <div class="container my-5">
+            <!-- Contenedor de la presentación-->
+            <div id="sobre-mi" class="container_presentacion row g-4 align-items-center mx-auto" style="max-width: 1000px;">
+                <!--El contenedor lo dividimos en dos, a la izquierda la foto y a la derecha la información-->
+                <div class="col-3 p-2">
+                    <img src="img/cv.png" alt="Mi foto" class="profile-avatar me-2">
+                </div>
+                <div class="col-9 p-2">
+                    <h4>DESARROLLADORA WEB | GRADUADA EN MARKETING</h4>
+                    <h1 style="font-weight: 700;">Sara Fraile</h1>
+                    <p>Perfil polivalente con formación técnica en Desarrollo de 
+                        Aplicaciones Web (DAW) y grado en Marketing. Más de 5 años 
+                        de experiencia liderando equipos y gestionando operaciones 
+                        en el sector retail. Busco incorporarme a un equipo donde 
+                        aportar compromiso y seguir desarrollándome como 
+                        programadora.   
+                    </p>
+                    <!--Apartado con badgets de información-->
+                    <div class="info-badges my-4">
+                        <span class="badget-item d-inline-flex align-items-center px-3 py-2 rounded-pill">
+                            <img src="img/telefono.png" alt="Telefono" class="me-1" style="width: 20px; height: 20px; object-fit: contain;">
+                            +34 633 43 97 53
+                        </span>
+
+                        <span class="badget-item d-inline-flex align-items-center px-3 py-2 rounded-pill">
+                            <img src="img/email.png" alt="Email" class="me-1" style="width: 20px; height: 20px; object-fit: contain;">
+                            sarafrarod@gmail.com
+                        </span>
+
+                        <span class="badget-item d-inline-flex align-items-center px-3 py-2 rounded-pill">
+                            <img src="img/ubicacion.png" alt="Ubicacion" class="me-1" style="width: 20px; height: 20px; object-fit: contain;">
+                            Valladolid, España
+                        </span>
+                    </div>
+
+                    <!--Apartado con botones de comunicación directa-->
+                    <div class="info-buttons my-4">
+                        <a href="https://github.com/sarafr97" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin d-inline-flex align-items-center px-3 py-2 rounded-pill"">
+                            <img src="img/github.png" alt="GitHub" class="me-1" style="width: 20px; height: 20px; object-fit: contain;">
+                            GitHub
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/sara-fraile-rodriguez/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin d-inline-flex align-items-center px-3 py-2 rounded-pill">
+                            <img src="img/linkedin.png" alt="Linkedin" class="me-1" style="width: 15px; height: 15px; object-fit: contain;">
+                            LinkedIn
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+
+    <!-- Barra de navegación que se queda fija (sticky-top)-->
+    <nav class="navbar-estilo sticky-top w-100">
+        <div class="container d-flex justify-content-center flex-wrap gap-4 py-3" style="max-width: 1000px;">
+            <a class="nav-link-custom active" href="#sobre-mi">Sobre mi</a>
+            <a class="nav-link-custom" href="#portfolio">Portfolio</a>
+            <a class="nav-link-custom" href="#skills">Skills</a>
+            <a class="nav-link-custom" href="#educacion">Educación</a>
+            <a class="nav-link-custom" href="#contacto">Contacto</a>
+        </div>
+    </nav>
+    
+    <!-- Contenedor principal, con las secciones-->
+    <div class="container my-5" style="max-width: 1000px;">
+
+        <!-- ===========PROYECTOS===============-->
+        <!-- Contenedor con todos los proyectos-->
+        <div id="portfolio" class="container container-portfolio">
+            <h2 class="title text-center my-5">Portfolio</h2>
+
+            <!--Cada uno de los proyectos que añado al portfolio van en una tarjeta,va a haber 3 columnas en pantallas grandes (lg: 3), 2 en medianas (md: 2), 1 en móvil-->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+
+                <!-- TARJETA 1: PORTFOLIO ---- Tarjeta envuelta en su columna -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm overflow-hidden">
+                        <!--Divido la tarjeta en dos partes, arriba la foto, abajo información (nombre, tecnologías)-->
+                        <!-- Imagen superior a ancho completo (100%) -->
+                        <div class="d-flex align-items-center justify-content-center p-3">
+                            <img src="" class="project-mockup-img" alt="Proyecto Portfolio">
+                        </div> 
+                        
+
+                        <!--Contenido-->
+                        <div class="card-body text-center">
+
+                            <!-- Tecnologías arriba como tags sutiles -->
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge-tech">PHP</span>
+                                <span class="badge-tech">Bootstrap</span>
+                            </div>
+
+                            <h5 class="card-tittle" style="font-weight: 600;">Portfolio</h5>
+
+                            <p class="card-text">
+                                
+                            </p>
+
+                            <!--Botones de acción-->
+                            <div class="action-buttons my-2">
+                                <!--target y rel son necesarios para que se abra la pestaña en otra ventana con seguridad-->
+                                <a href="https://github.com/tu-usuario/tu-repo" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ver código en GitHub">
+                                    <img src="img/github.png" alt="GitHub" class="icon-img me-4" style="width: 20px; height: 20px; object-fit: contain;">
+                                </a>
+
+                                <a href="https://tu-web-demo.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Visitar sitio web">
+                                    <img src="img/web.png" alt="Web" class="icon-img" style="width: 20px; height: 20px; object-fit: contain;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- TARJETA 2: RECETARIO ---- Tarjeta envuelta en su columna -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm overflow-hidden">
+                        <!--Divido la tarjeta en dos partes, arriba la foto, abajo información (nombre, tecnologías)-->
+                        <!-- Imagen superior a ancho completo (100%) -->
+                        <div class="d-flex align-items-center justify-content-center p-3">
+                            <img src="img/recetario.png" class="project-mockup-img" alt="Proyecto Recetario">
+                        </div> 
+                        
+
+                        <!--Contenido-->
+                        <div class="card-body text-center">
+
+                            <!-- Tecnologías arriba como tags sutiles -->
+                            <div class="d-flex flex-wrap gap-2 mb-3">
+                                <span class="badge-tech">PHP</span>
+                                <span class="badge-tech">MySQL</span>
+                                <span class="badge-tech">Bootstrap</span>
+                            </div>
+
+                            <h5 class="card-tittle" style="font-weight: 600;">Recetario</h5>
+
+                            <p class="card-text">
+                                Aplicación web completa para la gestión y consulta de recetas. Cuenta con autenticación de usuarios, panel de administración y buscador dinámico.
+                            </p>
+
+                            <!--Botones de acción-->
+                            <div class="action-buttons my-2">
+                                <!--target y rel son necesarios para que se abra la pestaña en otra ventana con seguridad-->
+                                <a href="https://github.com/sarafr97/good-cooking" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ver código en GitHub">
+                                    <img src="img/github.png" alt="GitHub" class="icon-img me-4" style="width: 20px; height: 20px; object-fit: contain;">
+                                </a>
+
+                                <a href="https://tu-web-demo.com" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Visitar sitio web">
+                                    <img src="img/web.png" alt="Web" class="icon-img" style="width: 20px; height: 20px; object-fit: contain;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- ===========SKILLS===============-->
+        <!-- Contenedor con las skills y las tecnologías-->
+        <div id="skills" class="container container-skills">
+            <h2 class="title text-center my-5">Skills</h2>
+
+            <div class="skill-lista">
+                <!-- Fila 1: Lenguajes de programación -->
+                <div class="skill-item">
+                    <span class="skill-label">Lenguajes de programación</span>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="skill-valor">HTML5</span>
+                        <span class="skill-valor">CSS3</span>
+                        <span class="skill-valor">JAVASCRIPT</span>
+                    </div>
+                    
+                </div>
+
+                <!-- Fila 2: Frameworks y librerías -->
+                <div class="skill-item">
+                    <span class="skill-label">Frameworks y librería</span>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="skill-valor">Bootstrap</span>
+                    </div>
+                </div>
+
+                <!-- Fila 3: Software y herramientas -->
+                <div class="skill-item">
+                    <span class="skill-label">Software y herramientas</span>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="skill-valor">Visual Studio Code</span>
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <!-- ===========EDUCACIÓN===============-->
+        <!-- Contenedor con la educación recibida-->
+        <div id="educacion" class="container container-educacion my-5">
+            <h2 class="title text-center my-5">Educación</h2>
+
+            <!-- Fila 1: Alineada a la izquierda (ocupa 8 de 12 columnas) -->
+            <div class="row mb-4">
+                <div class="col-12 col-md-8 text-start">
+                    <div class="card card-custom h-100 shadow-sm p-4">
+                        <span class="badget-date align-self-start mb-3">
+                            2023 — Actualidad
+                        </span>
+                        <h4 class="card-title fw-bold mb-1">C.F.G.S. Desarrollo de Aplicaciones Web</h4>
+                        <h6 class="card-subtitle mb-3" style="color: #9C6008;">IES Ribera de Castilla, Valladolid</h6>
+                        <p class="card-text mb-0">
+                            Formación en desarrollo frontend y backend, bases de datos, despliegue web y metodologías ágiles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila 2: Alineada a la derecha (offset-md-4 la empuja hacia la derecha) -->
+            <div class="row mb-4">
+                <div class="col-12 col-md-8 offset-md-4 text-start">
+                    <div class="card card-custom h-100 shadow-sm border-0 p-4">
+                        <span class="badget-date align-self-start mb-3">
+                            2015 — 2020
+                        </span>
+                        <h4 class="card-title fw-bold mb-1">Grado de Marketing e investigación de mercados </h4>
+                        <h6 class="card-subtitle mb-3" style="color: #9C6008;">Universidad de Valladolid</h6>
+                        <p class="card-text mb-0">
+                            Especialización en marketing digital, investigación de mercados, gestión comercial y comunicación.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fila 3: Alineada a la izquierda nuevamente -->
+            <div class="row mb-4">
+                <div class="col-12 col-md-8 text-start">
+                    <div class="card card-custom h-100 shadow-sm border-0 p-4">
+                        <span class="badget-date align-self-start mb-3">
+                            2017 — 2018
+                        </span>
+                        <h4 class="card-title fw-bold mb-1">Programa Erasmus+</h4>
+                        <h6 class="card-subtitle mb-3" style="color: #9C6008;">Università degli Studi di Bari Aldo Moro  </h6>
+                        <p class="card-text mb-0">
+                            Estancia académica internacional centrada en desarrollo de competencias interculturales e idiomas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===========CONTACTO===============-->
+        <!-- Contenedor con la información de CONTACTO-->
+        <div id="contacto" class="container container-contacto">
+            <h2 class="title text-center my-5">Contacto</h2>
+
+            <div class="contacto-lista">
+                <!-- Fila 1: Teléfono -->
+                <div class="contacto-item">
+                    <span class="contacto-label">PHONE</span>
+                    <span class="contacto-valor">+34 633 43 97 53</span>
+                </div>
+
+                <!-- Fila 2: Email -->
+                <div class="contacto-item">
+                    <span class="contacto-label">MAIL</span>
+                    <a href="mailto:sarafrarod@gmail.com" class="contacto-valor contacto-link">sarafrarod@gmail.com</a>
+                </div>
+
+                <!-- Fila 3: Redes -->
+                <div class="contacto-item">
+                    <span class="contacto-label">LINKEDIN</span>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contacto-valor contacto-link">sara-fraile</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'MiFuentePortfolio';
+    src: url('../fonts/fuente_portfolio3.otf') format('opentype');
+}
+
+
+body {
+    font-family: 'MiFuentePortfolio', sans-serif;
+    background-color: #404541;
+    color: #F0EDE4;
+}
+
+.title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    letter-spacing: 4px; 
+}
+
+/*Animación para el desplazamiento del menú*/
+html {
+  scroll-behavior: smooth; /*No da salto brusco*/
+  scroll-padding-top: 80px; /* Evita que el título quede tapado si tienes cabecera fija */
+}
+
+/*Badget de la parte superior, de la info personal*/
+.badget-item, .btn, .skill-valor {
+    background-color: #F0EDE4;
+    color: #404541;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    border: 1px solid #8D957E;
+}
+
+/* Barra de navegación de ancho completo */
+.navbar-estilo{
+    background-color: #404541;
+    color: #F0EDE4;
+    border-bottom: 1px solid #F0EDE4;
+}
+
+/* Enlaces del menú (sin subrayado ni azul) */
+.nav-link-custom{
+    text-decoration: none;
+    color: #F0EDE4;             /* Color del texto del enlace */
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: 0.4rem 0.8rem;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Efecto al pasar el ratón */
+.nav-link-custom:hover{
+    color: #8D957E;
+    font-weight: 700;
+    
+}
+
+/*Formato de las card*/
+.card, .card-custom {
+    background-color: #A5A8A6;
+    border-color: #9C6008;
+}
+
+/* Badges de tecnologías y fechas refinados */
+.badge-tech, .badget-date {
+    display: inline-block;
+    background-color: #F0EDE4;
+    color: #9C6008;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 9999px;
+    border: 1px solid #9C6008;
+}
+
+.btn-icon{
+    display: inline-block; /* <-- Imprescindible para que funcione transform */
+}
+
+/*Efecto de los enlaces a los proyectos cuando se pasa el cursos por encima*/
+.btn-icon:hover {
+    transform: scale(1.15);   /* Crece un 15% de forma suave */
+    opacity: 0.8;             /* Baja ligeramente la opacidad */
+}
+
+/*FORMATO PARA LAS SKILLS Y LOS DATOS DE CONTACTO*/
+/* Contenedor principal de la lista */
+.contacto-lista, .skill-lista{
+    width: 100%;
+    border-top: 1px solid #F0EDE4; /* Línea superior del bloque */
+}
+
+/* Cada una de las filas */
+.contacto-item, .skill-item {
+    display: flex; /* Para poder alinear unos datos a la izquierda y otros a la derecha */
+    justify-content: space-between; /* Separa el texto a los dos extremos */
+    align-items: center;
+    padding: 1rem 0;                /* Espaciado arriba y abajo de la línea */
+    border-bottom: 1px solid #F0EDE4; /* Línea divisoria debajo de cada dato */
+}
+
+/* Texto de la izquierda*/
+.contacto-label, .skill-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 4px;           /* Espaciado entre letras estilo minimalista */
+}
+
+/* Texto o enlace de la derecha */
+.contacto-valor {
+    font-size: 0.95rem;
+    text-align: right;
+    text-decoration: none;
+    color: #F0EDE4;
+}
+
+/* Estilo si el valor es un enlace */
+.contacto-link {
+    color: inherit;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.contacto-link:hover {
+    opacity: 0.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
